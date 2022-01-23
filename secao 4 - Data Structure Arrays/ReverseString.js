@@ -13,4 +13,20 @@ function reverseString(str) {
     return strReverse.join('')
 } 
 
-console.log(reverseString('Hi my name is Dailan'))
+// console.log(reverseString('Hi my name is Dailan'))
+
+
+function reverseNumber1(str) {
+   return str.split('').reverse().join('')
+}
+
+function reverseNumber3([...str]){
+    return str.reverse().join('')
+}
+
+const reverseNumber4 = str => [...str].reverse().join('')
+
+
+const reverseNumber5 = str => str.split('').reverse().join('')
+
+console.log(reverseNumber4('Hi my name is Dailan'))
