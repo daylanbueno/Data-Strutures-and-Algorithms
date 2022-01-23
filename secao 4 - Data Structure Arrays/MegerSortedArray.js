@@ -17,6 +17,9 @@ function mergeSortedArrayMySoluction(arr1, arr2) {
     return sortedArray
 } // N(N^2) no so good soluction.
 
+function otherSoluction(arr1, arr2) {
+    return [...arr1, ...arr2].sort((a,b) => a-b)
+}
 
-console.log(mergeSortedArrayMySoluction([56,3,0,31],[4,6,30]))
 
+console.log(otherSoluction([56,3,0,31],[4,6,30]))
