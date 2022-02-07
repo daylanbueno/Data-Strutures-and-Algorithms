@@ -17,7 +17,7 @@ class StackArray {
 
     // this. method remove an element of top stack.
     pop() {
-        return this.values.unshift()
+        return this.values.pop()
     }
 }
 
@@ -27,3 +27,5 @@ myStackArray.push('udemy')
 myStackArray.push('discord')
 console.log(myStackArray)
 console.log('top element ',myStackArray.peek())
+myStackArray.pop()
+console.log(myStackArray)
